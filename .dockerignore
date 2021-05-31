@@ -1,0 +1,54 @@
+### Do not include these files when creating a sharable image 
+##############################################################
+
+### Development environment files (one development level above this sharable image)
+.vscode/
+.devcontainer/
+.git/
+.gitignore
+.gitattributes
+*.code-workspace
+
+### Data generated containers based on this image 
+data/
+
+### PM2
+ecosystem.*
+
+### Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+package-lock.json
+
+### Dependency directories (These should be built when a container based on this image is run, not included in the image)
+node_modules/
+dist/
+sourcemaps/
+build/
+
+### Optional npm cache directory
+.npm
+
+### Optional eslint cache
+.eslintcache
+
+### dotenv environment variables file
+.env
+.env*
+*.env
+
+### Allow example env only
+!example.env
+
+### Do not include the dockerfile itself in the image
+Dockerfile
+.dockerignore

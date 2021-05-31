@@ -1,0 +1,19 @@
+version: "3.9"
+services:  
+  project_name: # WARNING: This must be changed to the name of your project
+    build: 
+      context: .
+      args: 
+        - INSTALL_DIR=${INSTALL_DIR}
+    env_file: .env
+    container_name: ${PROJECT_NAME}    
+    restart: 'on-failure:3'
+    image: ${PROJECT_NAME}
+    command: sh -c "npm run start"
+    working_dir: /opt/${INSTALL_DIR}
+    volumes: 
+      - type: volume
+        source: db_data
+        target: /opt/${INSTALL_DIR}/data
+volumes:
+  db_data: {}    

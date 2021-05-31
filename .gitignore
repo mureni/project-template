@@ -1,0 +1,48 @@
+### Exceptions (ensure these files are included in the git repo)
+!package.json
+
+### Allow example env only
+!example.env
+
+### WARNING: You may want to remove these exceptions if you do not want to share your development setup
+!.vscode/launch.json
+!*.code-workspace
+!.devcontainer
+
+### Project files to ignore
+.vscode/settings.json
+
+### PM2
+ecosystem.*
+
+### Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+package-lock.json
+
+### Dependency directories
+node_modules/
+dist/
+sourcemaps/
+build/
+
+### Optional npm cache directory
+.npm
+
+### Optional eslint cache
+.eslintcache
+
+### dotenv environment variables file
+.env
+.env*
+*.env
+
