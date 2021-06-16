@@ -6,11 +6,12 @@
 
 ### WARNING: You may want to remove these exceptions if you do not want to share your development setup
 !.vscode/launch.json
-!*.code-workspace
 !.devcontainer
 
 ### Project files to ignore
 .vscode/settings.json
+*.code-workspace
+
 
 ### PM2
 ecosystem.*
